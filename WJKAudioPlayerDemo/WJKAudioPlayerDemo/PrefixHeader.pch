@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  WJKAudioPlayerDemo
+//
+//  Created by Zeaho on 2018/1/20.
+//  Copyright © 2018年 Zeaho. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#pragma mark - improt framework
+#import <Masonry.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "AFNetworking.h"
+
+#pragma mark - import tool
+#import "CategoryKit.h"
+
+#endif /* PrefixHeader_pch */

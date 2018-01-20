@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		235A9E8E561FECD7A3AEDE19 /* libPods-WJKAudioPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D96319FA220CA8156C7DEA2D /* libPods-WJKAudioPlayerDemo.a */; };
+		FA3FED6720133AB200EDD15A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FED6620133AB200EDD15A /* AppDelegate.m */; };
+		FA3FED6A20133AB200EDD15A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FED6920133AB200EDD15A /* ViewController.m */; };
+		FA3FED6D20133AB200EDD15A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3FED6B20133AB200EDD15A /* Main.storyboard */; };
+		FA3FED6F20133AB200EDD15A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3FED6E20133AB200EDD15A /* Assets.xcassets */; };
+		FA3FED7520133AB200EDD15A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FED7420133AB200EDD15A /* main.m */; };
+		FA3FED9820133ACB00EDD15A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3FED9720133ACB00EDD15A /* Launch Screen.storyboard */; };
+		FA3FED9E20133B7700EDD15A /* WJKAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FED9C20133B7600EDD15A /* WJKAudioPlayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C3D4723AF9F365685F8080D /* Pods-WJKAudioPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJKAudioPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJKAudioPlayerDemo/Pods-WJKAudioPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D96319FA220CA8156C7DEA2D /* libPods-WJKAudioPlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJKAudioPlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB849E0AE455D1CB0C1A49E2 /* Pods-WJKAudioPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJKAudioPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJKAudioPlayerDemo/Pods-WJKAudioPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FA3FED6220133AB200EDD15A /* WJKAudioPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJKAudioPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3FED6520133AB200EDD15A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA3FED6620133AB200EDD15A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA3FED6820133AB200EDD15A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FA3FED6920133AB200EDD15A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FA3FED6C20133AB200EDD15A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA3FED6E20133AB200EDD15A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA3FED7320133AB200EDD15A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3FED7420133AB200EDD15A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA3FED9720133ACB00EDD15A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FA3FED9C20133B7600EDD15A /* WJKAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJKAudioPlayer.m; sourceTree = "<group>"; };
+		FA3FED9D20133B7600EDD15A /* WJKAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJKAudioPlayer.h; sourceTree = "<group>"; };
+		FA3FED9F20133D3C00EDD15A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA3FED5F20133AB200EDD15A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235A9E8E561FECD7A3AEDE19 /* libPods-WJKAudioPlayerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B1BB78C8E188225A5AE77CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C3D4723AF9F365685F8080D /* Pods-WJKAudioPlayerDemo.debug.xcconfig */,
+				EB849E0AE455D1CB0C1A49E2 /* Pods-WJKAudioPlayerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA3FED5920133AB200EDD15A = {
+			isa = PBXGroup;
+			children = (
+				FA3FED9B20133B7600EDD15A /* WJKAudioPlayer */,
+				FA3FED6420133AB200EDD15A /* WJKAudioPlayerDemo */,
+				FA3FED6320133AB200EDD15A /* Products */,
+				0B1BB78C8E188225A5AE77CC /* Pods */,
+				FFB958831273AB9C8025EDA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA3FED6320133AB200EDD15A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA3FED6220133AB200EDD15A /* WJKAudioPlayerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA3FED6420133AB200EDD15A /* WJKAudioPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FA3FED6520133AB200EDD15A /* AppDelegate.h */,
+				FA3FED6620133AB200EDD15A /* AppDelegate.m */,
+				FA3FED6820133AB200EDD15A /* ViewController.h */,
+				FA3FED6920133AB200EDD15A /* ViewController.m */,
+				FA3FED9720133ACB00EDD15A /* Launch Screen.storyboard */,
+				FA3FED6B20133AB200EDD15A /* Main.storyboard */,
+				FA3FED6E20133AB200EDD15A /* Assets.xcassets */,
+				FA3FED7320133AB200EDD15A /* Info.plist */,
+				FA3FED7420133AB200EDD15A /* main.m */,
+				FA3FED9F20133D3C00EDD15A /* PrefixHeader.pch */,
+			);
+			path = WJKAudioPlayerDemo;
+			sourceTree = "<group>";
+		};
+		FA3FED9B20133B7600EDD15A /* WJKAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FA3FED9C20133B7600EDD15A /* WJKAudioPlayer.m */,
+				FA3FED9D20133B7600EDD15A /* WJKAudioPlayer.h */,
+			);
+			path = WJKAudioPlayer;
+			sourceTree = "<group>";
+		};
+		FFB958831273AB9C8025EDA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D96319FA220CA8156C7DEA2D /* libPods-WJKAudioPlayerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA3FED6120133AB200EDD15A /* WJKAudioPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA3FED8E20133AB200EDD15A /* Build configuration list for PBXNativeTarget "WJKAudioPlayerDemo" */;
+			buildPhases = (
+				9682ECB73B387885C9902129 /* [CP] Check Pods Manifest.lock */,
+				FA3FED5E20133AB200EDD15A /* Sources */,
+				FA3FED5F20133AB200EDD15A /* Frameworks */,
+				FA3FED6020133AB200EDD15A /* Resources */,
+				CE8A71AB5BA8432ED316ECB0 /* [CP] Embed Pods Frameworks */,
+				ACA35D16E4E57234A207B9B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WJKAudioPlayerDemo;
+			productName = WJKAudioPlayerDemo;
+			productReference = FA3FED6220133AB200EDD15A /* WJKAudioPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA3FED5A20133AB200EDD15A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Zeaho;
+				TargetAttributes = {
+					FA3FED6120133AB200EDD15A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA3FED5D20133AB200EDD15A /* Build configuration list for PBXProject "WJKAudioPlayerDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA3FED5920133AB200EDD15A;
+			productRefGroup = FA3FED6320133AB200EDD15A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA3FED6120133AB200EDD15A /* WJKAudioPlayerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA3FED6020133AB200EDD15A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3FED9820133ACB00EDD15A /* Launch Screen.storyboard in Resources */,
+				FA3FED6F20133AB200EDD15A /* Assets.xcassets in Resources */,
+				FA3FED6D20133AB200EDD15A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9682ECB73B387885C9902129 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WJKAudioPlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACA35D16E4E57234A207B9B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WJKAudioPlayerDemo/Pods-WJKAudioPlayerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE8A71AB5BA8432ED316ECB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WJKAudioPlayerDemo/Pods-WJKAudioPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA3FED5E20133AB200EDD15A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3FED6A20133AB200EDD15A /* ViewController.m in Sources */,
+				FA3FED7520133AB200EDD15A /* main.m in Sources */,
+				FA3FED9E20133B7700EDD15A /* WJKAudioPlayer.m in Sources */,
+				FA3FED6720133AB200EDD15A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA3FED6B20133AB200EDD15A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA3FED6C20133AB200EDD15A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA3FED8C20133AB200EDD15A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA3FED8D20133AB200EDD15A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA3FED8F20133AB200EDD15A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C3D4723AF9F365685F8080D /* Pods-WJKAudioPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ENWLKZ8AQ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WJKAudioPlayerDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = WJKAudioPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.nedu.WJKAudioPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA3FED9020133AB200EDD15A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB849E0AE455D1CB0C1A49E2 /* Pods-WJKAudioPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ENWLKZ8AQ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WJKAudioPlayerDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = WJKAudioPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.nedu.WJKAudioPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA3FED5D20133AB200EDD15A /* Build configuration list for PBXProject "WJKAudioPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3FED8C20133AB200EDD15A /* Debug */,
+				FA3FED8D20133AB200EDD15A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA3FED8E20133AB200EDD15A /* Build configuration list for PBXNativeTarget "WJKAudioPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3FED8F20133AB200EDD15A /* Debug */,
+				FA3FED9020133AB200EDD15A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA3FED5A20133AB200EDD15A /* Project object */;
+}
