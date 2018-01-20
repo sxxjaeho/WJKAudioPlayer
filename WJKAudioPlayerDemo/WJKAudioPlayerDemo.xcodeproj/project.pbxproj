@@ -14,7 +14,7 @@
 		FA3FED6F20133AB200EDD15A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3FED6E20133AB200EDD15A /* Assets.xcassets */; };
 		FA3FED7520133AB200EDD15A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FED7420133AB200EDD15A /* main.m */; };
 		FA3FED9820133ACB00EDD15A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3FED9720133ACB00EDD15A /* Launch Screen.storyboard */; };
-		FA3FED9E20133B7700EDD15A /* WJKAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FED9C20133B7600EDD15A /* WJKAudioPlayer.m */; };
+		FA3FEDA32013403400EDD15A /* WJKAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FEDA12013403400EDD15A /* WJKAudioPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		FA3FED7320133AB200EDD15A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3FED7420133AB200EDD15A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA3FED9720133ACB00EDD15A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		FA3FED9C20133B7600EDD15A /* WJKAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJKAudioPlayer.m; sourceTree = "<group>"; };
-		FA3FED9D20133B7600EDD15A /* WJKAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJKAudioPlayer.h; sourceTree = "<group>"; };
 		FA3FED9F20133D3C00EDD15A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FA3FEDA12013403400EDD15A /* WJKAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJKAudioPlayer.m; sourceTree = "<group>"; };
+		FA3FEDA22013403400EDD15A /* WJKAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJKAudioPlayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,6 @@
 		FA3FED5920133AB200EDD15A = {
 			isa = PBXGroup;
 			children = (
-				FA3FED9B20133B7600EDD15A /* WJKAudioPlayer */,
 				FA3FED6420133AB200EDD15A /* WJKAudioPlayerDemo */,
 				FA3FED6320133AB200EDD15A /* Products */,
 				0B1BB78C8E188225A5AE77CC /* Pods */,
@@ -79,6 +78,7 @@
 		FA3FED6420133AB200EDD15A /* WJKAudioPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FA3FEDA02013403400EDD15A /* WJKAudioPlayer */,
 				FA3FED6520133AB200EDD15A /* AppDelegate.h */,
 				FA3FED6620133AB200EDD15A /* AppDelegate.m */,
 				FA3FED6820133AB200EDD15A /* ViewController.h */,
@@ -93,13 +93,14 @@
 			path = WJKAudioPlayerDemo;
 			sourceTree = "<group>";
 		};
-		FA3FED9B20133B7600EDD15A /* WJKAudioPlayer */ = {
+		FA3FEDA02013403400EDD15A /* WJKAudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				FA3FED9C20133B7600EDD15A /* WJKAudioPlayer.m */,
-				FA3FED9D20133B7600EDD15A /* WJKAudioPlayer.h */,
+				FA3FEDA22013403400EDD15A /* WJKAudioPlayer.h */,
+				FA3FEDA12013403400EDD15A /* WJKAudioPlayer.m */,
 			);
-			path = WJKAudioPlayer;
+			name = WJKAudioPlayer;
+			path = ../../WJKAudioPlayer;
 			sourceTree = "<group>";
 		};
 		FFB958831273AB9C8025EDA6 /* Frameworks */ = {
@@ -237,7 +238,7 @@
 			files = (
 				FA3FED6A20133AB200EDD15A /* ViewController.m in Sources */,
 				FA3FED7520133AB200EDD15A /* main.m in Sources */,
-				FA3FED9E20133B7700EDD15A /* WJKAudioPlayer.m in Sources */,
+				FA3FEDA32013403400EDD15A /* WJKAudioPlayer.m in Sources */,
 				FA3FED6720133AB200EDD15A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
