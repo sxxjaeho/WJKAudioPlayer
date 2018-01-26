@@ -25,9 +25,14 @@ typedef NS_ENUM(NSInteger, WJKAudioPlayerState) {
 
 @protocol WJKAudioPlayerDelegate <NSObject>
 
+@optional
+// 获取当前播放状态的代理方法
 - (void)player:(WJKAudioPlayer *)player stateChanged:(WJKAudioPlayerState)state;
-
+// 获取当前时间进度的代理方法
+- (void)player:(WJKAudioPlayer *)player currentTime:(CGFloat)currentTime;
+// 音频将要播放的代理方法
 - (void)audioPlayerWillPlayMusic;
+// 音频将要停止的代理方法
 - (void)audioPlayerWillStopMusic;
 
 @end

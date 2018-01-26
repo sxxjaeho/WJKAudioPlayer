@@ -16,11 +16,14 @@ static WJKAudioPlayer *_instance;
  */
 @property (nonatomic, strong) AVPlayer *player;
 
+/**
+ 时间监听
+ */
+@property (nonatomic, strong) id timerObserver;
+
 @end
 
-@implementation WJKAudioPlayer {
-    BOOL _isUserPause;  //是否是用户暂停
-}
+@implementation WJKAudioPlayer
 
 #pragma mark - life cycle
 - (void)dealloc
@@ -28,12 +31,34 @@ static WJKAudioPlayer *_instance;
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-//移除观察者
+// 移除观察者
 - (void)removeObservers
 {
     [[[self player] currentItem] removeObserver:self forKeyPath:@"status"];
     [[[self player] currentItem] removeObserver:self forKeyPath:@"playbackLikelyToKeepUp"];
     [self removeObserver:self forKeyPath:@"state"];
+}
+
+// 添加时间监听
+- (void)addPlayerTimerObserver
+{
+    if (!(_timerObserver != nil)) {
+        __weak typeof(self)weakSelf = self;
+        _timerObserver = [[self player] addPeriodicTimeObserverForInterval:CMTimeMake(1, 30) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+            if ([[weakSelf delegate] respondsToSelector:@selector(player:currentTime:)] && self.delegate) {
+                [[weakSelf delegate] player:weakSelf currentTime:CMTimeGetSeconds(time)];
+            }
+        }];
+    }
+}
+
+// 移除时间监听
+- (void)removePlayerTimerObserver
+{
+    if (_timerObserver != nil) {
+        [[self player] removeTimeObserver:_timerObserver];
+        _timerObserver = nil;
+    }
 }
 
 #pragma mark - public
@@ -52,6 +77,7 @@ static WJKAudioPlayer *_instance;
     // 播放下一个之移除上一个资源组织组者的监听
     if([[self player] currentItem]) {
         [self removeObservers];
+        [self removePlayerTimerObserver];
     }
     
     // 资源的组织
@@ -72,11 +98,12 @@ static WJKAudioPlayer *_instance;
     
     // 资源的播放
     self.player = [AVPlayer playerWithPlayerItem:item];
+    
+    // 添加时间监听
+    [self addPlayerTimerObserver];
 }
 
 - (void)pause {
-    
-    _isUserPause = YES;
     
     [[self player] pause];
     // 设置暂停状态
@@ -87,28 +114,28 @@ static WJKAudioPlayer *_instance;
 
 - (void)resume {
     
-    _isUserPause = NO;
-    
-    [[self player] play];
     // 播放器存在并且资源已经加载到可以播放,设置播放状态
     if(self.player && self.player.currentItem.playbackLikelyToKeepUp) {
         self.state = WJKAudioPlayerState_Playing;
     }
+    [[self player] play];
 }
 
 - (void)stop {
     //必须移除上一个资源组织组者的监听
     if(self.player.currentItem) {
         [self removeObservers];
+        [self removePlayerTimerObserver];
     }
     
     [self pause];
     
-    self.player = nil;
     // 设置停止状态
     if(self.player) {
         self.state = WJKAudioPlayerState_Stoped;
     }
+    
+    self.player = nil;
 }
 
 - (void)seekWithProgress:(CGFloat)progress {
@@ -206,7 +233,9 @@ static WJKAudioPlayer *_instance;
             case AVPlayerItemStatusReadyToPlay:
             {
                 NSLog(@"数据加载完毕,开始播放");
-                [self resume];
+                if (self.state != WJKAudioPlayerState_Pause) {
+                    [self resume];
+                }
                 break;
             }
             case AVPlayerItemStatusFailed:
@@ -221,15 +250,11 @@ static WJKAudioPlayer *_instance;
     } else if ([keyPath isEqualToString:@"playbackLikelyToKeepUp"]) {
         BOOL keepUp = [change[NSKeyValueChangeNewKey] integerValue];
         if(keepUp) {
-            //如果不是用户手动暂停，可以播放，用户手动操作级别最高
-            if(!_isUserPause) {
-                [self resume];
-            }
             if ([[self delegate] respondsToSelector:@selector(audioPlayerWillPlayMusic)]) {
                 [[self delegate] audioPlayerWillPlayMusic];
             }
             // 设置加载完成状态
-            if (self.player) {
+            if (self.player && self.state != WJKAudioPlayerState_Pause) {
                 self.state = WJKAudioPlayerState_Loaded;
             }
             NSLog(@"资源已经加载的差不多,可以播放了");
